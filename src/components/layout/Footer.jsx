@@ -185,8 +185,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Credits & Disclaimer */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-          <p className="flex items-center gap-1.5 text-center sm:text-left">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4 text-center sm:text-left">
+          <p className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-start">
             <span>© {new Date().getFullYear()} Handmade Crafts by Rashi Jain. All rights reserved.</span>
             <span className="hidden md:inline">• Handcrafted in Mumbai</span>
           </p>

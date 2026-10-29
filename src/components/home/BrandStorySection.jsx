@@ -13,47 +13,47 @@ export default function BrandStorySection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Visual Collage (6 cols) */}
           <div className="lg:col-span-6 relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg border border-[#EFE8DE] bg-[#F4EFEB]">
                   <img
                     src={floralToran}
                     alt="Floral Toran detail"
-                    className="w-full h-48 sm:h-64 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-44 sm:h-64 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg border border-[#EFE8DE] bg-[#F4EFEB]">
                   <img
                     src={navratriRings}
                     alt="Navratri accessories crafted by hand"
-                    className="w-full h-36 sm:h-44 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-32 sm:h-44 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
 
-              <div className="space-y-4 pt-6 sm:pt-10">
+              <div className="space-y-3 sm:space-y-4 pt-5 sm:pt-10">
                 <div className="rounded-2xl overflow-hidden shadow-lg border border-[#EFE8DE] bg-[#F4EFEB]">
                   <img
                     src={sublabh}
                     alt="Subh Labh handcrafted blessing"
-                    className="w-full h-36 sm:h-48 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-32 sm:h-48 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-lg border border-[#EFE8DE] bg-[#F4EFEB]">
                   <img
                     src={lotusRangoli}
                     alt="Lotus Rangoli handcrafted decor"
-                    className="w-full h-48 sm:h-60 object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-44 sm:h-60 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
             </div>
 
             {/* Floating Heritage Seal */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#7A1C2E] text-white p-4 sm:p-5 rounded-full shadow-2xl border-4 border-[#FFFDF9] flex flex-col items-center justify-center text-center w-24 h-24 sm:w-28 sm:h-28">
-              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-[#DFB743] mb-1" />
-              <span className="text-[10px] sm:text-xs uppercase tracking-wider font-semibold">Since</span>
-              <span className="font-serif text-sm sm:text-base font-bold text-[#DFB743]">Sep 2015</span>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#7A1C2E] text-white p-3 sm:p-5 rounded-full shadow-2xl border-4 border-[#FFFDF9] flex flex-col items-center justify-center text-center w-20 h-20 sm:w-28 sm:h-28 shrink-0">
+              <Sparkles className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-[#DFB743] mb-0.5 sm:mb-1" />
+              <span className="text-[9px] sm:text-xs uppercase tracking-wider font-semibold">Since</span>
+              <span className="font-serif text-xs sm:text-base font-bold text-[#DFB743]">Sep 2015</span>
             </div>
           </div>
 

@@ -20,7 +20,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2D2A26] tracking-tight leading-[1.15]">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-[#2D2A26] tracking-tight leading-[1.18]">
             Little Details.{' '}
             <span className="text-[#7A1C2E] italic font-normal block sm:inline">
               Beautiful Celebrations.
@@ -28,15 +28,15 @@ export default function HeroSection() {
           </h1>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-sm sm:text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed font-light">
             Discover handcrafted festive décor, thoughtful gifts, and beautiful creations made to celebrate your most special moments. Each piece is thoughtfully handcrafted in Mumbai.
           </p>
 
           {/* Action Buttons */}
-          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-xs sm:max-w-none mx-auto">
             <Link
               to="/shop"
-              className="w-full sm:w-auto px-8 py-3.5 bg-[#7A1C2E] text-white rounded-lg text-sm font-semibold uppercase tracking-wider hover:bg-[#601422] transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto px-7 py-3 sm:py-3.5 bg-[#7A1C2E] text-white rounded-lg text-xs sm:text-sm font-semibold uppercase tracking-wider hover:bg-[#601422] transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 group"
             >
               <span>Explore Collections</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -44,37 +44,37 @@ export default function HeroSection() {
 
             <a
               href="#bestsellers"
-              className="w-full sm:w-auto px-7 py-3.5 bg-white text-[#2D2A26] border border-[#D8CFC4] rounded-lg text-sm font-semibold uppercase tracking-wider hover:border-[#7A1C2E] hover:text-[#7A1C2E] transition-all shadow-xs flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 sm:py-3.5 bg-white text-[#2D2A26] border border-[#D8CFC4] rounded-lg text-xs sm:text-sm font-semibold uppercase tracking-wider hover:border-[#7A1C2E] hover:text-[#7A1C2E] transition-all shadow-xs flex items-center justify-center gap-2"
             >
               <span>Shop Bestsellers</span>
             </a>
           </div>
 
           {/* Value Highlights */}
-          <div className="pt-8 grid grid-cols-3 gap-3 sm:gap-6 border-t border-[#EFE8DE] max-w-lg mx-auto text-center">
+          <div className="pt-6 sm:pt-8 grid grid-cols-3 gap-2 sm:gap-6 border-t border-[#EFE8DE] max-w-lg mx-auto text-center">
             <div className="space-y-0.5">
-              <span className="font-serif text-xl sm:text-2xl font-bold text-[#7A1C2E]">
+              <span className="font-serif text-lg sm:text-2xl font-bold text-[#7A1C2E]">
                 9+ Years
               </span>
-              <p className="text-[11px] sm:text-xs text-stone-500 uppercase tracking-wider">
+              <p className="text-[10px] sm:text-xs text-stone-500 uppercase tracking-wider">
                 Mumbai Studio
               </p>
             </div>
 
-            <div className="space-y-0.5 border-l border-[#EFE8DE] pl-3 sm:pl-6">
-              <span className="font-serif text-xl sm:text-2xl font-bold text-[#7A1C2E]">
+            <div className="space-y-0.5 border-l border-[#EFE8DE] pl-2 sm:pl-6">
+              <span className="font-serif text-lg sm:text-2xl font-bold text-[#7A1C2E]">
                 100%
               </span>
-              <p className="text-[11px] sm:text-xs text-stone-500 uppercase tracking-wider">
+              <p className="text-[10px] sm:text-xs text-stone-500 uppercase tracking-wider">
                 Handcrafted
               </p>
             </div>
 
-            <div className="space-y-0.5 border-l border-[#EFE8DE] pl-3 sm:pl-6">
-              <span className="font-serif text-xl sm:text-2xl font-bold text-[#7A1C2E]">
+            <div className="space-y-0.5 border-l border-[#EFE8DE] pl-2 sm:pl-6">
+              <span className="font-serif text-lg sm:text-2xl font-bold text-[#7A1C2E]">
                 Pan-India
               </span>
-              <p className="text-[11px] sm:text-xs text-stone-500 uppercase tracking-wider">
+              <p className="text-[10px] sm:text-xs text-stone-500 uppercase tracking-wider">
                 Safe Delivery
               </p>
             </div>

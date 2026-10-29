@@ -43,10 +43,10 @@ export default function BestsellersSection() {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex items-center space-x-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+        <div className="flex items-center space-x-2 overflow-x-auto pb-3 mb-6 sm:mb-8 w-full max-w-full scrollbar-none">
           <button
             onClick={() => setSelectedFilter('all')}
-            className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
+            className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
               selectedFilter === 'all'
                 ? 'bg-[#7A1C2E] text-white shadow-sm'
                 : 'bg-white text-stone-600 hover:bg-[#F5EFEB] border border-[#EFE8DE]'
@@ -56,7 +56,7 @@ export default function BestsellersSection() {
           </button>
           <button
             onClick={() => setSelectedFilter('festival-decor')}
-            className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
+            className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
               selectedFilter === 'festival-decor'
                 ? 'bg-[#7A1C2E] text-white shadow-sm'
                 : 'bg-white text-stone-600 hover:bg-[#F5EFEB] border border-[#EFE8DE]'
@@ -66,7 +66,7 @@ export default function BestsellersSection() {
           </button>
           <button
             onClick={() => setSelectedFilter('navratri-accessories')}
-            className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
+            className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
               selectedFilter === 'navratri-accessories'
                 ? 'bg-[#7A1C2E] text-white shadow-sm'
                 : 'bg-white text-stone-600 hover:bg-[#F5EFEB] border border-[#EFE8DE]'
@@ -76,7 +76,7 @@ export default function BestsellersSection() {
           </button>
           <button
             onClick={() => setSelectedFilter('toran')}
-            className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
+            className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
               selectedFilter === 'toran'
                 ? 'bg-[#7A1C2E] text-white shadow-sm'
                 : 'bg-white text-stone-600 hover:bg-[#F5EFEB] border border-[#EFE8DE]'
@@ -87,7 +87,7 @@ export default function BestsellersSection() {
         </div>
 
         {/* Product Grid: 4 cols desktop, 3 cols tablet, 2 cols mobile */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

@@ -22,8 +22,8 @@ export default function CategorySection() {
           </p>
         </div>
 
-        {/* Categories Grid (8 Cards: 4 cols on desktop, 2 on tablet/mobile) */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+        {/* Categories Grid (6 Cards: 4 cols on desktop, 2 on tablet/mobile) */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {categories.map((cat) => (
             <Link
               key={cat.id}
@@ -43,9 +43,9 @@ export default function CategorySection() {
               </div>
 
               {/* Category Info */}
-              <div className="p-4 sm:p-5 flex flex-col justify-between flex-1">
+              <div className="p-3 sm:p-5 flex flex-col justify-between flex-1">
                 <div>
-                  <h3 className="font-serif text-base sm:text-lg font-bold text-[#2D2A26] group-hover:text-[#7A1C2E] transition-colors leading-tight">
+                  <h3 className="font-serif text-sm sm:text-lg font-bold text-[#2D2A26] group-hover:text-[#7A1C2E] transition-colors leading-tight line-clamp-2">
                     {cat.name}
                   </h3>
                   <p className="text-xs text-stone-500 mt-1 line-clamp-1 hidden sm:block">
@@ -53,7 +53,7 @@ export default function CategorySection() {
                   </p>
                 </div>
 
-                <div className="mt-3 sm:mt-4 pt-3 border-t border-[#F5EFEB] flex items-center justify-between text-xs font-semibold text-[#7A1C2E] group-hover:text-[#50111D]">
+                <div className="mt-2.5 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#F5EFEB] flex items-center justify-between text-[11px] sm:text-xs font-semibold text-[#7A1C2E] group-hover:text-[#50111D]">
                   <span>Shop Collection</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>

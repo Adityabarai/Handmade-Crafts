@@ -128,7 +128,7 @@ export default function ShopPage() {
         </div>
 
         {/* Category Filter Pills (Horizontal Scrollable) */}
-        <div className="flex items-center space-x-2 overflow-x-auto pb-4 mb-6 scrollbar-none">
+        <div className="flex items-center space-x-2 overflow-x-auto pb-3 mb-6 w-full max-w-full scrollbar-none">
           <button
             onClick={() => handleCategoryChange('all')}
             className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all shrink-0 ${
@@ -262,7 +262,7 @@ export default function ShopPage() {
           </div>
         ) : viewMode === 'grid' ? (
           /* 4 columns on desktop, 3 on tablets, 2 on mobile */
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} layout="grid" />
             ))}

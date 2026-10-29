@@ -160,31 +160,31 @@ export default function ProductCard({ product, layout = 'grid' }) {
       </div>
 
       {/* Details Area */}
-      <div className="p-4 flex flex-col flex-1 justify-between">
+      <div className="p-3 sm:p-4 flex flex-col flex-1 justify-between">
         <div>
-          <div className="flex items-center justify-between text-[11px] text-[#8C7A70] mb-1">
-            <span className="uppercase tracking-wider font-medium text-[#C85A32]">
+          <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-[#8C7A70] mb-1">
+            <span className="uppercase tracking-wider font-medium text-[#C85A32] truncate pr-1">
               {product.categoryName}
             </span>
-            <span className="text-amber-600 font-semibold flex items-center gap-0.5">
+            <span className="text-amber-600 font-semibold flex items-center gap-0.5 shrink-0">
               ★ {product.rating}
             </span>
           </div>
 
           <Link to={`/product/${product.id}`}>
-            <h3 className="font-serif text-base font-bold text-[#2D2A26] hover:text-[#7A1C2E] transition-colors line-clamp-1 leading-snug">
+            <h3 className="font-serif text-sm sm:text-base font-bold text-[#2D2A26] hover:text-[#7A1C2E] transition-colors line-clamp-1 leading-snug">
               {product.name}
             </h3>
           </Link>
         </div>
 
-        <div className="pt-3 mt-2 border-t border-[#F5EFEB] flex items-center justify-between">
-          <div className="flex items-baseline space-x-1.5">
-            <span className="text-base sm:text-lg font-bold text-[#7A1C2E]">
+        <div className="pt-2 sm:pt-3 mt-2 border-t border-[#F5EFEB] flex items-center justify-between">
+          <div className="flex items-baseline space-x-1 sm:space-x-1.5">
+            <span className="text-sm sm:text-lg font-bold text-[#7A1C2E]">
               ₹{product.price.toLocaleString('en-IN')}
             </span>
             {product.originalPrice && (
-              <span className="text-xs text-stone-400 line-through">
+              <span className="text-[10px] sm:text-xs text-stone-400 line-through">
                 ₹{product.originalPrice.toLocaleString('en-IN')}
               </span>
             )}

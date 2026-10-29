@@ -72,25 +72,25 @@ export default function Header() {
             : 'bg-[#FAF7F2] py-4 border-b border-[#EFE8DE]/60'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-1.5 sm:gap-4">
             {/* Mobile Hamburger Button */}
-            <div className="flex items-center lg:hidden">
+            <div className="flex items-center lg:hidden shrink-0">
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="p-2 text-[#2D2A26] hover:text-[#7A1C2E] rounded-md transition-colors"
+                className="p-1.5 sm:p-2 text-[#2D2A26] hover:text-[#7A1C2E] rounded-md transition-colors"
                 aria-label="Open navigation menu"
               >
-                <Menu className="w-6 h-6" />
+                <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
               </button>
             </div>
 
             {/* Brand Logo & Name */}
-            <Link to="/" className="flex items-center space-x-3 group text-left">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#7A1C2E] to-[#99243A] p-0.5 shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center">
+            <Link to="/" className="flex items-center space-x-2 sm:space-x-3 group text-left min-w-0 shrink">
+              <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#7A1C2E] to-[#99243A] p-0.5 shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
                 <div className="w-full h-full rounded-full border border-[#D4AF37]/50 flex items-center justify-center bg-[#7A1C2E]">
-                  <svg className="w-6 h-6 text-[#DFB743]" viewBox="0 0 100 100" fill="none">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#DFB743]" viewBox="0 0 100 100" fill="none">
                     <circle cx="50" cy="50" r="45" stroke="#DFB743" strokeWidth="3" strokeDasharray="3 3"/>
                     <path d="M50 20 C54 32, 58 40, 50 56 C42 40, 46 32, 50 20 Z" fill="#F4E8D1"/>
                     <path d="M50 24 C53 33, 56 39, 50 50 C44 39, 47 33, 50 24 Z" fill="#DFB743"/>
@@ -100,11 +100,11 @@ export default function Header() {
                   </svg>
                 </div>
               </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-lg sm:text-2xl font-bold tracking-tight text-[#7A1C2E] leading-none group-hover:text-[#5A1220] transition-colors">
+              <div className="flex flex-col min-w-0">
+                <span className="font-serif text-sm sm:text-2xl font-bold tracking-tight text-[#7A1C2E] leading-tight truncate group-hover:text-[#5A1220] transition-colors">
                   Handmade Crafts
                 </span>
-                <span className="text-[10px] sm:text-xs tracking-[0.2em] uppercase font-medium text-[#C85A32] mt-0.5">
+                <span className="text-[8px] sm:text-xs tracking-[0.15em] sm:tracking-[0.2em] uppercase font-medium text-[#C85A32] truncate mt-0.5">
                   by Rashi Jain
                 </span>
               </div>
@@ -220,26 +220,26 @@ export default function Header() {
             </nav>
 
             {/* Action Icons */}
-            <div className="flex items-center space-x-2 sm:space-x-4">
+            <div className="flex items-center space-x-1 sm:space-x-4 shrink-0">
               {/* Search Toggle */}
               <button
                 type="button"
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
-                className="p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative"
+                className="p-1.5 sm:p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative"
                 aria-label="Search items"
               >
-                <Search className="w-5 h-5" />
+                <Search className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
               </button>
 
               {/* Wishlist Link */}
               <Link
                 to="/wishlist"
-                className="p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative"
+                className="p-1.5 sm:p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative"
                 aria-label="Wishlist"
               >
-                <Heart className="w-5 h-5" />
+                <Heart className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
                 {wishlist.length > 0 && (
-                  <span className="absolute top-1 right-1 w-4 h-4 bg-[#C85A32] text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                  <span className="absolute top-0.5 right-0.5 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-[#C85A32] text-white text-[9px] sm:text-[10px] font-bold rounded-full flex items-center justify-center">
                     {wishlist.length}
                   </span>
                 )}
@@ -249,12 +249,12 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => setIsCartOpen(true)}
-                className="p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative group"
+                className="p-1.5 sm:p-2 text-[#4A4540] hover:text-[#7A1C2E] hover:bg-[#F5EFEB] rounded-full transition-colors relative group"
                 aria-label="Shopping Cart"
               >
-                <ShoppingBag className="w-5 h-5" />
+                <ShoppingBag className="w-4.5 h-4.5 sm:w-5 sm:h-5" />
                 {cartCount > 0 && (
-                  <span className="absolute top-1 right-1 w-4 h-4 bg-[#7A1C2E] text-white text-[10px] font-bold rounded-full flex items-center justify-center animate-pulse">
+                  <span className="absolute top-0.5 right-0.5 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-[#7A1C2E] text-white text-[9px] sm:text-[10px] font-bold rounded-full flex items-center justify-center animate-pulse">
                     {cartCount}
                   </span>
                 )}
