@@ -61,57 +61,6 @@ npm run preview
 
 ## 📂 Project Structure
 
-```
-Handmade Crafts RJ/
-├── public/
-│   ├── logo-icon.svg          # Boutique floral lotus brand SVG
-│   └── favicon.svg
-├── src/
-│   ├── assets/                # Static assets & media
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── CartDrawer.jsx       # Slide-out interactive cart drawer
-│   │   │   ├── ImageWithFallback.jsx# Image renderer with skeleton & graceful SVG fallback
-│   │   │   ├── ProductCard.jsx      # Grid & list product card with quick view and stock badge
-│   │   │   ├── QuickViewModal.jsx   # Accessible quick view dialog with gallery & quantity
-│   │   │   ├── ScrollToTop.jsx      # Auto-scroll on route navigation
-│   │   │   ├── SocialIcons.jsx      # Clean SVG brand social icons
-│   │   │   └── Toast.jsx            # Toast alert notifications
-│   │   ├── home/
-│   │   │   ├── AnnouncementBar.jsx  # Slim festive ticker
-│   │   │   ├── BestsellersSection.jsx # Bestsellers grid with filters
-│   │   │   ├── BrandStorySection.jsx# Brand heritage since Sept 2015
-│   │   │   ├── CategorySection.jsx  # 8 image-based category cards
-│   │   │   ├── HeroSection.jsx      # Split layout hero with boutique badges
-│   │   │   ├── InstagramFeed.jsx    # 6-image curated studio feed
-│   │   │   ├── NewsletterSection.jsx# Interactive festive subscription box
-│   │   │   ├── OccasionsSection.jsx # 6 celebration cards (Diwali, Navratri, Weddings...)
-│   │   │   └── WhyChooseUsSection.jsx# 4 verified artisan quality cards
-│   │   └── layout/
-│   │       ├── Header.jsx           # Sticky nav, search bar, category dropdown, badges
-│   │       └── Footer.jsx           # Links, categories, contact placeholders & copyright
-│   ├── context/
-│   │   └── ShopContext.jsx          # Cart, Wishlist, Search, QuickView & Toast state
-│   ├── data/
-│   │   ├── categories.js            # 8 official product categories
-│   │   ├── occasions.js             # 6 festive occasions
-│   │   └── products.js              # 16 static craft products with demo prices & details
-│   ├── pages/
-│   │   ├── AboutPage.jsx            # Brand history, philosophy, Mumbai workshop
-│   │   ├── CartPage.jsx             # Dedicated shopping bag page
-│   │   ├── CheckoutPage.jsx         # Demo checkout with form validation & preview modal
-│   │   ├── ContactPage.jsx          # Inquiry form, FAQs, contact details
-│   │   ├── HomePage.jsx             # Homepage assembling 8 sections
-│   │   ├── ProductDetailPage.jsx    # Large gallery, specifications, tabs, related items
-│   │   ├── ShopPage.jsx             # Catalog with search, filters, sorting & view toggle
-│   │   └── WishlistPage.jsx         # Saved items page
-│   ├── App.jsx                      # App router & providers
-│   ├── index.css                    # Tailwind v4 import & custom styles
-│   └── main.jsx
-├── index.html                       # Google fonts (Cormorant Garamond + Plus Jakarta Sans)
-├── package.json
-└── vite.config.js                   # Vite + Tailwind plugin config
-```
 
 ---
 
